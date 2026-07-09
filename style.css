@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #bdf0f9;
+}
+
+
+nav {
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+
+header {
+    background: #f6b6c8;
+    color: white;
+    text-align: center;
+    padding: 60px;
+}
+
+
+.card {
+    background: white;
+    width: 60%;
+    margin: 30px auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+.card img {
+    border-radius: 50%;
+}
+
+
+button {
+    background: green;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+footer {
+    footer {
+    background-color: rgba(0, 0, 0, 0.847);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+} /* Animation sa header */
+header {
+    animation: slideDown 1.5s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Animation sa card */
+.card {
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Picture animation */
+.card img {
+    transition: 0.5s;
+}
+
+.card img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+
+/* Button animation */
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-5px);
+}/* Responsive para sa cellphone */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 15px;
+    }
+
+
+    header {
+        padding: 30px;
+    }
+
+
+    header h1 {
+        font-size: 25px;
+    }
+
+
+    .card {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+
+    .card img {
+        width: 150px;
+    }
+
+}/* Dark Mode */
+
+.dark {
+    background-color: #121212;
+    color: white;
+}
+
+
+.dark .card {
+    background-color: #222;
+    color: white;
+}
+
+
+.dark nav {
+    background-color: black;
+}.skills {
+    text-align: center;
+    padding: 40px;
+}
+
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.skill-card {
+
+    background: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 15px;
+
+    transition: 0.3s;
+
+}
+
+
+.skill-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+@media(max-width:700px){
+
+    .skill-container{
+
+        flex-direction: column;
+        align-items:center;
+
+    }
+
+}.projects {
+    text-align: center;
+    padding: 40px;
+}
+
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.project-card {
+
+    background: white;
+    padding: 25px;
+    width: 220px;
+    border-radius: 15px;
+    transition: 0.3s;
+
+}
+
+
+.project-card:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+@media(max-width:700px){
+
+    .project-container{
+        flex-direction: column;
+        align-items:center;
+    }
+
+}.contact {
+    text-align: center;
+    padding: 40px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+
+input, textarea {
+
+    margin: 10px;
+    padding: 15px;
+
+    border-radius: 10px;
+    border: 1px solid gray;
+
+    font-size: 16px;
+}
+
+
+textarea {
+    height: 120px;
+}
+
+
+.contact button {
+
+    width: 200px;
+    margin: auto;
+
+}
+
+
+@media(max-width:700px){
+
+    form {
+        width: 90%;
+    }
+
+}.chatbot {
+    text-align: center;
+    padding: 40px;
+}
+
+
+#chatbox {
+
+    background: white;
+    width: 60%;
+    height: 200px;
+
+    margin: auto;
+    padding: 20px;
+
+    border-radius: 15px;
+    overflow-y: auto;
+
+    text-align: left;
+
+}
+
+
+#userInput {
+
+    width: 50%;
+    margin-top: 20px;
+
+}
+
+
+.chatbot button {
+
+    margin-left: 10px;
+
+}
+
+
+@media(max-width:700px){
+
+    #chatbox {
+        width: 80%;
+    }
+
+    #userInput {
+        width: 70%;
+    }
+
+}.user-msg {
+
+    background: #0066ff;
+    color: white;
+
+    padding: 10px;
+    margin: 10px;
+
+    border-radius: 15px;
+
+    text-align: right;
+}
+
+
+.ai-msg {
+
+    background: #eeeeee;
+
+    padding: 10px;
+    margin: 10px;
+
+    border-radius: 15px;
+
+    text-align: left;
+}
